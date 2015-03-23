@@ -1,6 +1,7 @@
 AUTHOR = frdmn
 NAME = docker-ghost
 VERSION = 1.0.0
+PORT = 8091
 SHELL := /bin/bash
 
 .PHONY: all pull stop remove run
@@ -28,4 +29,4 @@ remove:
 
 run: stop remove
 	@printf "INFO: Starting new container '$(NAME)' ..."
-	@docker run --name="$(NAME)" --restart=always -d -p 8091:2368 -v $(shell pwd):/ghost-override dockerfile/ghost
+	@docker run --name="$(NAME)" --restart=always -d -p $(PORT):2368 -v $(shell pwd):/ghost-override dockerfile/ghost
