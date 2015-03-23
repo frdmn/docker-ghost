@@ -3,6 +3,8 @@ docker-ghost
 
 Makefile for easy and comfortable Ghost Docker image creation and instance restarts.
 
+Caution: This repository uses the official [Ghost Dockerfile](https://registry.hub.docker.com/u/dockerfile/ghost/dockerfile/)!
+
 ### Installation
 
 1. Clone repository:  
