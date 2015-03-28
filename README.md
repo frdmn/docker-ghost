@@ -15,13 +15,18 @@ Caution: This repository uses the official [Ghost Dockerfile](https://registry.h
 
 ### Usage
 
-To pull/update to the latest Ghost version:
+To pull/update to the latest Ghost version as well as restart your Docker instance:
 
-`make pull`
+`make`
 
 To start or restart Ghost:
 
 `make run`
+
+Stop and remove the container:
+
+`make stop`  
+`make remove`  
 
 ### Version
 1.0.0
